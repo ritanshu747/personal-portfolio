@@ -1,3 +1,7 @@
+.portfolio__item-buttons {
+    display: flex; /* Display buttons horizontally */
+    gap: 10px; /* Adjust the spacing between buttons */
+  }
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

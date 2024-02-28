@@ -3,8 +3,7 @@ import "./intro.css";
 import { FaAward } from "react-icons/fa";
 import React from "react";
 import { VscFolderLibrary } from "react-icons/vsc";
-import img from '../../assets/Me.png'
-
+import img from '../../assets/ME.jpg'
 
 
 const Intro = () => {
@@ -15,7 +14,7 @@ const Intro = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={img} alt="Rasif Taghizade" />
+            <img src={img} alt="Ritanshu Shivhare" />
           </div>
         </div>
         <div className="about__content">
@@ -32,13 +31,7 @@ const Intro = () => {
             </article>
           </div>
           <p>
-          I'm an aspiring Front-End Developer
-           with a knack for crafting responsive user
-            interfaces using React. My skill set includes 
-            a solid foundation in Data Structures and 
-            Algorithms (DSA) for efficient coding, as 
-            well as experience with SQL for data management. I'm eager to apply my JavaScript and React expertise to create engaging web experiences while continuously honing 
-          my troubleshooting and optimization skills.
+          I'm an aspiring Full-stack Developer with a keen interest in crafting responsive user interfaces using the MERN stack. My skill set encompasses a solid foundation in Data Structures and Algorithms (DSA) for efficient coding practices, coupled with experience in SQL for effective data management. Eager to apply my expertise in Express and React to create engaging web experiences, I continually hone my troubleshooting and optimization skills to deliver top-notch solutions.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

@@ -7,20 +7,24 @@
 .about__me {
     width: 100%;
     aspect-ratio: 1/1;
-    border-radius: 2rem;
+    border-radius: 1rem;
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
     display: grid;
     place-items: center;
 }
 
 .about__me-image {
-    border-radius: 2rem;
+    width: 330px; /* Set the width of the image */
+    height: 330px; /* Set the height of the image */
+    border-radius: 1%;
     overflow: hidden;
     transition: var(--transition);
 }
 
+
 .about__me-image:hover {
     transform: scale(1.1);
+    border-radius: 1%;
 }
 
 .about__cards {

@@ -1,47 +1,40 @@
 import "./portfolio.css";
-
 import IMG1 from "../../assets/Educational Website.jpg";
 import IMG2 from "../../assets/RubyCode Blog Project.jpg";
 import IMG4 from "../../assets/Covid-19 Project.jpg";
-
-
 import React from "react";
 
-//Portfolio function
+// Portfolio function
 const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: "WEATHER PREDICTION APPLICATION",
-      img: IMG1,
+      title: "Weather Prediction Application",
+      img: IMG2,
       description:
-        "weather app provides real-time weather information, forecasts.",
-      technologies: "Html | CSS | Javascript| React.Js ",
-      link: "https://github.com/ritanshu747/WEATHER-PREDICTION-APPLICATION.git",
-      github: "https://github.com/ritanshu747/WEATHER-PREDICTION-APPLICATION.git",
+        "This weather app provides real-time weather information and forecasts. Users can check current weather conditions, view forecasts for the upcoming days, and track weather changes for different locations.",
+      technologies: "HTML | CSS | JavaScript | React.js",
+      link: "https://weather-prediction-nine.vercel.app/",
+      github: "https://github.com/ritanshu747/Weather-App.git",
     },
     {
       id: 2,
-      title: "DriveEasyRentals",
+      title: "IMAGIN-AI",
       img: IMG4,
       description:
-        " The auto rental website provides vehicle search, reservations, secure login, and admin tools for inventory management.",
-      technologies: "MONGODB | Express.js | React.js |Node.js",
-      link: "https://github.com/ritanshu747/DriveEasyRentals.git",
-      github: "https://github.com/ritanshu747/DriveEasyRentals.git",
+        "This project is a clone of OpenAI's DallE model, allowing users to generate images from textual descriptions using artificial intelligence. The web application includes features such as image generation, user authentication, and admin tools for managing datasets.",
+      technologies: "MONGODB | Express.js | React.js | Node.js | OpenAI API",
+      link: "https://imagine-client.vercel.app/",
+      github: "https://github.com/ritanshu747/Imagine-client.git",
     },
     {
       id: 3,
-      title: "PERSONAL FINANCE MANAGER",
-      img: IMG2,
-      description: " Personal Finance Manager helps users track earnings, expenses, budgets, and finances, fostering financial awareness.",
-      technologies: "MONGODB | Express.js | React.js |Node.js ",
-      link: "https://github.com/ritanshu747/PERSONAL-FINANCE-MANAGER.git",
-      github: "https://github.com/ritanshu747/PERSONAL-FINANCE-MANAGER.git",
-    },
-   
-    
-    
+      title: "StudyNotion",
+      img: IMG1,
+      description: "StudyNotion offers users a platform to organize, collaborate, and share notes, documents, and study materials. Users can create, edit, and share notes, collaborate with others in real-time, and manage their study resources efficiently. Features include user authentication, document upload with Cloudinary, payment integration with Razorpay, and an intuitive user interface powered by Material-UI.",
+      technologies: "MONGODB | Express.js | React.js | Node.js | Cloudinary | Razorpay | JWT | Material-UI | Redux",
+      github: "https://github.com/ritanshu747/studynotions.git"
+    }
   ];
 
   return (
@@ -60,6 +53,8 @@ const Portfolio = () => {
               <p>{pro.description}</p>
               <p>{pro.technologies}</p>
             </div>
+            <br/>
+            <br/><br/>
             <div className="portfolio__item-cta">
               <a
                 href={pro.github}
@@ -69,14 +64,18 @@ const Portfolio = () => {
               >
                 GitHub
               </a>
-              <a
-                href={pro.link}
-                target="_blank"
-                className="btn btn-primary"
-                rel="noreferrer"
-              >
-                Live Demo
-              </a>
+              {pro.link ? (
+                <a
+                  href={pro.link}
+                  target="_blank"
+                  className="btn btn-primary"
+                  rel="noreferrer"
+                >
+                  Live Demo
+                </a>
+              ) : (
+                <span className="coming-soon">Coming Soon</span>
+              )}
             </div>
           </article>
         ))}

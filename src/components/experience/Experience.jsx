@@ -9,7 +9,7 @@ const Experience = () => {
       <h2>Skills</h2>
       <div className="container experience__container">
         <div className="experience__frontend">
-          <h3>Front-end Development</h3>
+          <h3>Full-stack Development</h3>
           <div className="experience__content">
           <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
@@ -21,11 +21,19 @@ const Experience = () => {
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Tailwind CSS</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
               <h4>JavaScript</h4>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
               <h4>React , Redux-toolkit</h4>
+            </article>
+            <article className="experience__details">
+              <BsFillPatchCheckFill className="experience__details-icon" />
+              <h4>Express js authn,  authz,  payment integration</h4>
             </article>
             <article className="experience__details">
               <BsFillPatchCheckFill className="experience__details-icon" />
