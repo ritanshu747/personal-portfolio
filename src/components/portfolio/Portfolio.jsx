@@ -11,7 +11,7 @@ const Portfolio = () => {
       id: 1,
       title: "StudyNotion",
       img: IMG1,
-      description: "StudyNotion: Your simplified Udemy-like platform. Featuring user authentication, course browsing, enrollment, and instructor tools. Built with React.js, Node.js, MongoDB, and Cloudinary for a seamless educational experience.",
+      description: "StudyNotion your go-to platform for streamlined online education. Enjoy seamless features like user authentication, course browsing, enrollment, and instructor tools. Crafted with React.js, Node.js, MongoDB, and Cloudinary for a seamless learning journey.",
       technologies: "MONGODB | Express.js | React.js | Node.js | Cloudinary | Razorpay | JWT | Material-UI | Redux",
       github: "https://github.com/ritanshu747/studynotions.git",
       link:"https://edtech-client-one.vercel.app/"
