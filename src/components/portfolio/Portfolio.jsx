@@ -38,7 +38,7 @@ const Portfolio = () => {
     },
   ];
 
-  return (
+ return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
@@ -54,8 +54,6 @@ const Portfolio = () => {
               <p>{pro.description}</p>
               <p>{pro.technologies}</p>
             </div>
-            <br/>
-            <br/><br/>
             <div className="portfolio__item-cta">
               <a
                 href={pro.github}
@@ -65,18 +63,14 @@ const Portfolio = () => {
               >
                 GitHub
               </a>
-              {pro.link ? (
-                <a
-                  href={pro.link}
-                  target="_blank"
-                  className="btn btn-primary"
-                  rel="noreferrer"
-                >
-                  Live Demo
-                </a>
-              ) : (
-                <span className="coming-soon">Coming Soon</span>
-              )}
+              <a
+                href={pro.link}
+                target="_blank"
+                className="btn btn-primary"
+                rel="noreferrer"
+              >
+                Live Demo
+              </a>
             </div>
           </article>
         ))}
