@@ -9,15 +9,24 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: "Weather Prediction Application",
+      title: "StudyNotion",
+      img: IMG1,
+      description: "StudyNotion offers users a platform to organize, collaborate, and share notes, documents, and study materials. Users can create, edit, and share notes, collaborate with others in real-time, and manage their study resources efficiently. Features include user authentication, document upload with Cloudinary, payment integration with Razorpay, and an intuitive user interface powered by Material-UI.",
+      technologies: "MONGODB | Express.js | React.js | Node.js | Cloudinary | Razorpay | JWT | Material-UI | Redux",
+      github: "https://github.com/ritanshu747/studynotions.git",
+      link:"https://edtech-client-one.vercel.app/"
+    },
+    {
+      id: 2,
+      title: "AuraSKy",
       img: IMG2,
       description:
         "This weather app provides real-time weather information and forecasts. Users can check current weather conditions, view forecasts for the upcoming days, and track weather changes for different locations.",
       technologies: "HTML | CSS | JavaScript | React.js",
-      link: "https://weather-prediction-nine.vercel.app/",
-      github: "https://github.com/ritanshu747/Weather-App.git",
+      link: "https://aura-sky.vercel.app/",
+      github: "https://github.com/ritanshu747/AuraSky.git",
     },
-    {
+     {
       id: 2,
       title: "IMAGIN-AI",
       img: IMG4,
@@ -27,14 +36,6 @@ const Portfolio = () => {
       link: "https://imagine-client.vercel.app/",
       github: "https://github.com/ritanshu747/Imagine-client.git",
     },
-    {
-      id: 3,
-      title: "StudyNotion",
-      img: IMG1,
-      description: "StudyNotion offers users a platform to organize, collaborate, and share notes, documents, and study materials. Users can create, edit, and share notes, collaborate with others in real-time, and manage their study resources efficiently. Features include user authentication, document upload with Cloudinary, payment integration with Razorpay, and an intuitive user interface powered by Material-UI.",
-      technologies: "MONGODB | Express.js | React.js | Node.js | Cloudinary | Razorpay | JWT | Material-UI | Redux",
-      github: "https://github.com/ritanshu747/studynotions.git"
-    }
   ];
 
   return (
