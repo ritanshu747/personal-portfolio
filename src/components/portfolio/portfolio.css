@@ -1,7 +1,3 @@
-.portfolio__item-buttons {
-    display: flex; /* Display buttons horizontally */
-    gap: 10px; /* Adjust the spacing between buttons */
-  }
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -23,7 +19,7 @@
 
 .portfolio__item-image {
     border-radius: 1.5rem;
-    overflow: visible;
+    overflow: hidden;
     height: 30%;
 }
 
@@ -56,6 +52,6 @@
 @media screen and (max-width: 600px){
     .portfolio__container {
         grid-template-columns: 1fr;
-        gap: 1.2rem;
+        gap: 1rem;
     }
 }
